@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  height: 80px;
+  width: 100%;
+  background-color: #e3e9ff;
+}
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.85;
+}
+.header__logo > img {
+  padding: 10px;
+  height: 40px !important;
+  object-fit: contain;
+}
+.header__logo > h2 {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.header__logo > h2 > strong {
+  color: #0b81ff;
+}
+
+.header > #logout__button {
+  margin-right: 10px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 500px) {
+  .header__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex: 0.85;
+  }
+  .header__logo > img {
+    padding: 5px;
+    height: 25px !important;
+    object-fit: contain;
+  }
+  .header__logo > h2 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 12px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    line-height: 15px;
+    font-weight: 400 !important;
+  }
+  .header > #logout__button {
+    font-size: 11px;
+  }
+}
+
+.app__signupbutton {
+  flex: 0.15 !important;
+  height: 40% !important;
+  width: 20% !important;
+  color: black !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  cursor: pointer !important;
+  margin-right: 20px !important;
+}
+.header__button:hover {
+  background-color: #afc6d5 !important;
+}
